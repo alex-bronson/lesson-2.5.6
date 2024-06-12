@@ -22,7 +22,6 @@ public class AsciiCharSequence implements CharSequence{
     @Override
     public CharSequence subSequence(int start, int end) {
         byte[] result = Arrays.copyOfRange(arr, start, end);
-
         return new AsciiCharSequence(result);
     }
 
